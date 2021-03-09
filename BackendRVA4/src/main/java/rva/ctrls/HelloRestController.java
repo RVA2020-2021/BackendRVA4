@@ -15,7 +15,7 @@ public class HelloRestController {
 	public String zbir()  {
 		long x = Math.round(Math.random()*10);
 		long y = Math.round(Math.random()*10);
-		return x + "+" + y + "=" + (x+y); 
+		return "Zbir je "+x + "+" + y + "=" + (x+y); 
 	}
 
 }
