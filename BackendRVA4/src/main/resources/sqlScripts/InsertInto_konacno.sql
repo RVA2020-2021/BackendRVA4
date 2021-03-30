@@ -93,7 +93,7 @@ INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
 VALUES (-100, 'CENTROPROIZVOD test', 'Dobanovacki put test, Surcin', '+38121222115');
 INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
 VALUES (-100, to_date('01.03.2020.', 'dd.mm.yyyy.'), to_date('05.03.2020.', 'dd.mm.yyyy.'), 4, 0, FALSE);
-NSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
+INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
 VALUES (-100, 4, 1, 10, 30, 'komad test', 30);
 
 select * from artikl;

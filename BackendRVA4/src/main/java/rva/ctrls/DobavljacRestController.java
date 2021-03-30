@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import rva.jpa.Artikl;
 import rva.jpa.Dobavljac;
 import rva.repository.DobavljacRepository;
 
+@CrossOrigin
 @RestController
 public class DobavljacRestController {
 	
@@ -65,9 +67,17 @@ public class DobavljacRestController {
 		if(!dobavljacRepository.existsById(id)) {
 			return new ResponseEntity<Dobavljac>(HttpStatus.NO_CONTENT);
 		}
+		
+		//ove dve naredbe su dodate jer nije bilo moguce brisanje dobavljaca zbog stranih kljuceva
+		jdbcTemplate.execute("delete from stavka_porudzbine sp "
+				+ "where porudzbina in (select id from porudzbina where dobavljac="+id+")");
+		jdbcTemplate.execute("delete from porudzbina where dobavljac="+id);
+		
+		
 		dobavljacRepository.deleteById(id);
 		if (id == -100) {
-			jdbcTemplate.execute("insert into \"dobavljac\" (\"id\", \"naziv\", \"adresa\", \"kontakt\") values (-100, 'Test naziv', 'Test adresa', '+381000000')");
+			jdbcTemplate.execute("insert into \"dobavljac\" (\"id\", \"naziv\", \"adresa\", \"kontakt\")"
+					+ " values (-100, 'Test naziv', 'Test adresa', '+381000000')");
 		}
 		return new ResponseEntity<Dobavljac>(HttpStatus.OK);
 		
