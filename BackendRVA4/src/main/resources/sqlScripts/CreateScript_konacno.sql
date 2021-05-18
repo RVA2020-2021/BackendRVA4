@@ -13,14 +13,14 @@ DROP SEQUENCE IF EXISTS stavka_porudzbine_seq;
 
 
 CREATE TABLE dobavljac(
-	id integer not null,
+	id integer not null default(nextval('dobavljac_seq')),
 	naziv varchar(50),
 	adresa varchar(200),
 	kontakt varchar(100)
 );
 
 CREATE TABLE artikl(
-	id integer not null,
+	id integer not null default(nextval('artikl_seq')),
 	naziv varchar(50),
 	proizvodjac varchar(50)
 );

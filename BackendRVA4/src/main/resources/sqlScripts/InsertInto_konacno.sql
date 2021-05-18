@@ -1,43 +1,43 @@
 -- ARTIKL PODACI
 
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (1, 'Moja Kravica sveze mleko, 1L', 'AD Imlek');
+VALUES (nextval('artikl_seq'), 'Moja Kravica sveze mleko, 1L', 'AD Imlek');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (2, 'Moja Kravica svezi sir, 1kg', 'AD Imlek');
+VALUES (nextval('artikl_seq'), 'Moja Kravica svezi sir, 1kg', 'AD Imlek');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (3, 'Jogurt, 1l', 'AD Imlek');
+VALUES (nextval('artikl_seq'), 'Jogurt, 1l', 'AD Imlek');
 
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (4, 'Persil Regular prasak, 2kg', 'Henkel Srbija');
+VALUES (nextval('artikl_seq'), 'Persil Regular prasak, 2kg', 'Henkel Srbija');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (5, 'Persil Duo Caps pak', 'Henkel Srbija');
+VALUES (nextval('artikl_seq'), 'Persil Duo Caps pak', 'Henkel Srbija');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (6, 'Persil Regular gel, 1l', 'Henkel Srbija');
+VALUES (nextval('artikl_seq'), 'Persil Regular gel, 1l', 'Henkel Srbija');
 
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (7, 'Jagoda', 'Fruit DOO');
+VALUES (nextval('artikl_seq'), 'Jagoda', 'Fruit DOO');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (8, 'Jabuka', 'Fruit DOO');
+VALUES (nextval('artikl_seq'), 'Jabuka', 'Fruit DOO');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (9, 'Breskva', 'Fruit DOO');
+VALUES (nextval('artikl_seq'), 'Breskva', 'Fruit DOO');
 
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (10, 'Slag pena', 'CENTROPROIZVOD');
+VALUES (nextval('artikl_seq'), 'Slag pena', 'CENTROPROIZVOD');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (11, 'Puding jagoda', 'CENTROPROIZVOD');
+VALUES (nextval('artikl_seq'), 'Puding jagoda', 'CENTROPROIZVOD');
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (12, 'Puding vanila', 'CENTROPROIZVOD');
+VALUES (nextval('artikl_seq'), 'Puding vanila', 'CENTROPROIZVOD');
 
 -- DOBAVLJAC PODACI
 
 INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
-VALUES (1, 'AD Imlek', 'Industrijska zona BB, Beograd', '+3812133344');
+VALUES (nextval('dobavljac_seq'), 'AD Imlek', 'Industrijska zona BB, Beograd', '+3812133344');
 INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
-VALUES (2, 'Henkel Srbija', 'Industrijska zona 55, Novi Sad', '+38121777111');
+VALUES (nextval('dobavljac_seq'), 'Henkel Srbija', 'Industrijska zona 55, Novi Sad', '+38121777111');
 INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
-VALUES (3, 'Fruit DOO', 'Bulevar Oslobodjenja 33, Beograd', '+38121999222');
+VALUES (nextval('dobavljac_seq'), 'Fruit DOO', 'Bulevar Oslobodjenja 33, Beograd', '+38121999222');
 INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
-VALUES (4, 'CENTROPROIZVOD', 'Dobanovacki put, Surcin', '+38121222111');
+VALUES (nextval('dobavljac_seq'), 'CENTROPROIZVOD', 'Dobanovacki put, Surcin', '+38121222111');
 
 -- PORUDZBINA PODACI
 
