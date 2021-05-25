@@ -41,16 +41,17 @@ VALUES (nextval('dobavljac_seq'), 'CENTROPROIZVOD', 'Dobanovacki put, Surcin', '
 
 -- PORUDZBINA PODACI
 
+
 INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
-VALUES (1, to_date('01.03.2020.', 'dd.mm.yyyy.'), to_date('05.03.2020.', 'dd.mm.yyyy.'), 1, 0, TRUE);
+VALUES (nextval('porudzbina_seq'), to_date('01.03.2020.', 'dd.mm.yyyy.'), to_date('05.03.2020.', 'dd.mm.yyyy.'), 1, 0, TRUE);
 INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
-VALUES (2, to_date('10.03.2020.', 'dd.mm.yyyy.'), to_date('15.03.2020.', 'dd.mm.yyyy.'), 2, 1000, FALSE);
+VALUES (nextval('porudzbina_seq'), to_date('10.03.2020.', 'dd.mm.yyyy.'), to_date('15.03.2020.', 'dd.mm.yyyy.'), 2, 1000, FALSE);
 INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
-VALUES (3, to_date('01.01.2020.', 'dd.mm.yyyy.'), to_date('01.01.2021.', 'dd.mm.yyyy.'), 3, 0, FALSE);
+VALUES (nextval('porudzbina_seq'), to_date('01.01.2020.', 'dd.mm.yyyy.'), to_date('01.01.2021.', 'dd.mm.yyyy.'), 3, 0, FALSE);
 INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
-VALUES (4, to_date('01.05.2020.', 'dd.mm.yyyy.'), to_date('05.05.2020.', 'dd.mm.yyyy.'), 4, 0, TRUE);
+VALUES (nextval('porudzbina_seq'), to_date('01.05.2020.', 'dd.mm.yyyy.'), to_date('05.05.2020.', 'dd.mm.yyyy.'), 4, 0, TRUE);
 INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
-VALUES (5, to_date('01.03.2020.', 'dd.mm.yyyy.'), to_date('05.03.2020.', 'dd.mm.yyyy.'), 4, 0, FALSE);
+VALUES (nextval('porudzbina_seq'), to_date('01.03.2020.', 'dd.mm.yyyy.'), to_date('05.03.2020.', 'dd.mm.yyyy.'), 4, 0, FALSE);
 
 -- STAVKA PORUDZBINE PODACI
 

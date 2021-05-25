@@ -26,7 +26,7 @@ CREATE TABLE artikl(
 );
 
 CREATE TABLE porudzbina(
-	id integer not null,
+	id integer not null default(nextval('porudzbina_seq')),
 	datum date,
 	isporuceno date,
 	iznos numeric,
