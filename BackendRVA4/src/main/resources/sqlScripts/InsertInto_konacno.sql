@@ -56,36 +56,36 @@ VALUES (nextval('porudzbina_seq'), to_date('01.03.2020.', 'dd.mm.yyyy.'), to_dat
 -- STAVKA PORUDZBINE PODACI
 
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (1, 1, 1, 1, 20, 'komad', 100);
+VALUES (nextval('stavka_porudzbine_seq'), 1, 1, 1, 20, 'komad', 100);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (2, 1, 2, 2, 10, 'komad', 300);
+VALUES (nextval('stavka_porudzbine_seq'), 1, 2, 2, 10, 'komad', 300);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (3, 1, 3, 3, 15, 'komad', 120);
+VALUES (nextval('stavka_porudzbine_seq'), 1, 3, 3, 15, 'komad', 120);
 
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (4, 2, 1, 4, 100, 'komad', 400);
+VALUES (nextval('stavka_porudzbine_seq'), 2, 1, 4, 100, 'komad', 400);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (5, 2, 2, 5, 60, 'komad', 350);
+VALUES (nextval('stavka_porudzbine_seq'), 2, 2, 5, 60, 'komad', 350);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (6, 2, 3, 6, 30, 'komad', 300);
+VALUES (nextval('stavka_porudzbine_seq'), 2, 3, 6, 30, 'komad', 300);
 
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (7, 3, 1, 7, 50, 'kg', 80);
+VALUES (nextval('stavka_porudzbine_seq'), 3, 1, 7, 50, 'kg', 80);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (8, 3, 2, 8, 30, 'kg', 120);
+VALUES (nextval('stavka_porudzbine_seq'), 3, 2, 8, 30, 'kg', 120);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (9, 3, 3, 9, 100, 'kg', 150);
+VALUES (nextval('stavka_porudzbine_seq'), 3, 3, 9, 100, 'kg', 150);
 
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (10, 4, 1, 10, 30, 'komad', 30);
+VALUES (nextval('stavka_porudzbine_seq'), 4, 1, 10, 30, 'komad', 30);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (11, 4, 2, 11, 50, 'komad', 40);
+VALUES (nextval('stavka_porudzbine_seq'), 4, 2, 11, 50, 'komad', 40);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (12, 4, 3, 12, 40, 'komad', 35);
+VALUES (nextval('stavka_porudzbine_seq'), 4, 3, 12, 40, 'komad', 35);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (13, 5, 1, 10, 60, 'komad', 30);
+VALUES (nextval('stavka_porudzbine_seq'), 5, 1, 10, 60, 'komad', 30);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (14, 5, 2, 11, 130, 'komad', 40);
+VALUES (nextval('stavka_porudzbine_seq'), 5, 2, 11, 130, 'komad', 40);
 
 --test podaci
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")

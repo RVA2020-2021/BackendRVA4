@@ -35,7 +35,7 @@ CREATE TABLE porudzbina(
 );
 
 CREATE TABLE stavka_porudzbine(
-	id integer not null,
+	id integer not null default(nextval('stavka_porudzbine_seq')),
 	redni_broj integer not null,
 	kolicina numeric,
 	jedinica_mere varchar(20),
